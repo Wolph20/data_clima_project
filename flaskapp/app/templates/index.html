@@ -1,0 +1,47 @@
+{% extends 'layaout.html' %}
+
+{% block body %}
+
+<div style=" font-family:sans-serif; justify-content:center; margin: 10px 0 50px 50px;">
+	<div class="container">
+		<h1 style="color: white; text-align:center; margin-bottom:50px;">Geoportal</h1>
+		<h2 style="color: white;">Product</h2>
+	</div>
+	<div class="card card-body" style="border-radius: 25px 25px 25px 25px; justify-content:center;">
+		<form action="/consume" method="POST" style="padding:40px ;justify-content:center">
+			<div style=" display:inline-flex">
+				<div style="border-radius: 25px 25px 25px 25px; padding: 5px 10px; outline: none; box-sizing: border-box;">
+					<input type="text" name="lat1" id="lat1" placeholder="Latitud 1" 
+					style="border-radius: 25px 25px 25px 25px; padding: 5px 10px; outline: none; box-sizing: border-box;" required>
+					<input type="text" name="long1" id="long1" placeholder="Longitud 1" 
+					style="border-radius: 25px 25px 25px 25px; padding: 5px 10px; outline: none; box-sizing: border-box;" required>
+				</div>
+				<div style="border-radius: 25px 25px 25px 25px; padding: 5px 10px; outline: none; box-sizing: border-box;">
+					<input type="text" name="lat2" id="lat2" placeholder="Latitud 2" 
+					style="border-radius: 25px 25px 25px 25px; padding: 5px 10px; outline: none; box-sizing: border-box;" required>
+					<input type="text" name="long2" id="long2" placeholder="Longitud 2" 
+					style="border-radius: 25px 25px 25px 25px; padding: 5px 10px; outline: none; box-sizing: border-box;" required>
+				</div>
+				<div style="border-radius: 25px 25px 25px 25px; padding: 5px 10px; outline: none; box-sizing: border-box;">
+					<input type="text" name="lat3" id="lat3" placeholder="Latitud 3" 
+					style="border-radius: 25px 25px 25px 25px; padding: 5px 10px; outline: none; box-sizing: border-box;" required>
+					<input type="text" name="long3" id="long3" placeholder="Longitud 3" 
+					style="border-radius: 25px 25px 25px 25px; padding: 5px 10px; outline: none; box-sizing: border-box;" required>
+				</div>
+				<div style="border-radius: 25px 25px 25px 25px; padding: 5px 10px; outline: none; box-sizing: border-box;">
+					<input type="text" name="fech_ini" id="fech_ini" placeholder="Fecha de inicio" 
+					style="border-radius: 25px 25px 25px 25px; padding: 5px 10px; outline: none; box-sizing: border-box;" required>
+					<input type="text" name="fech_fin" id="fech_fin" placeholder="Fecha de terminación" 
+					style="border-radius: 25px 25px 25px 25px; padding: 5px 10px; outline: none; box-sizing: border-box;" required>
+				</div>
+			</div>
+			
+			<input type="text" name="prod" id="prod" placeholder="Producto" 
+			style="border-radius: 25px 25px 25px 25px; padding: 5px 10px; outline: none; box-sizing: border-box;" required>
+			<button type="submit" href="" style="background: #9dca34; border-radius: 25px 25px 25px 25px; padding: 5px 10px; outline: none; box-sizing: border-box;"> Search </button>
+		</form>
+		
+	</div>
+</div>	
+
+{% endblock %}
